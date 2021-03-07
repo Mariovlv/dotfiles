@@ -10,18 +10,34 @@ syntax enable
 
 call plug#begin('~/.config/.nvim/plugged')
 
-Plug 'morhetz/gruvbox'
-Plug 'lervag/vimtex'
+Plug 'arcticicestudio/nord-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-surround'
+" Deoplate
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
 " Theme
-colorscheme gruvbox
+colorscheme nord
 
 let mapleader=" "
+
+" Search
+set incsearch
+set ignorecase
+set smartcase
 
 " Plug-Easymotion
 nmap <Leader>s <Plug>(easymotion-s2)
