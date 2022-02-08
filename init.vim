@@ -20,9 +20,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree' 
 
 call plug#end()
 
@@ -53,18 +51,6 @@ function! OpenTerminal()
   resize 10
 endfunction
 nnoremap <Leader>b :call OpenTerminal()<CR>
-
-" coc configuration
-" coc config
-let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-prettier', 
-  \ 'coc-json', 
-  \ 'coc-python', 
-  \ ]
 
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
