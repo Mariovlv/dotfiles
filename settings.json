@@ -1,0 +1,32 @@
+{
+  "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.editor.showTabs": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.matchBrackets": "never",
+  "breadcrumbs.enabled": false,
+  // Left border for testing
+  "editor.glyphMargin": false,
+  "workbench.activityBar.visible": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "[python]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": false
+  }
+}
